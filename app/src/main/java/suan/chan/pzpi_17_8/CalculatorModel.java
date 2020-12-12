@@ -32,6 +32,7 @@ public class CalculatorModel extends ViewModel {
             if (part.getType() == DataType.Number) {
                 items.add(part);
             }
+            reconstructString();
             return;
         }
         DataPart last = items.get(items.size() - 1);
